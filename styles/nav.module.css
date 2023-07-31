@@ -1,0 +1,19 @@
+.list {
+  display: flex;
+  gap: 2em;
+}
+
+@media (hover: hover) {
+  .list :hover {
+    color: var(--accent);
+  }
+}
+
+@media (hover: none) {
+  .list {
+    -webkit-tap-highlight-color: transparent;
+  }
+  .list :active {
+    color: var(--accent);
+  }
+}
