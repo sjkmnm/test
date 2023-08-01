@@ -1,3 +1,4 @@
+import Meta from "components/meta";
 import Container from "components/container";
 import Hero from "components/hero";
 import PostBody from "components/post-body";
@@ -10,10 +11,18 @@ import {
 import Image from "next/image";
 import eyecatch from "images/about.jpg";
 
+export const metadata = {
+  title: "アバウト",
+  openGraph: {
+    title: "アバウト",
+  },
+};
 export default function About() {
   return (
     <>
       <Container>
+        {/* <Meta pageTitle="アバウト" pageDesc="About development activities" /> */}
+
         <Hero title="About" subtitle="About development activities" />
 
         <figure>
