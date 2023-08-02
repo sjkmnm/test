@@ -25,14 +25,18 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <link rel="icon" href="/favicon.png" />
-      <link rel="apple-touch-icon" href="/favicon.png" />
+      <html lang="js">
+        <body>
+          <link rel="icon" href="/favicon.png" />
+          <link rel="apple-touch-icon" href="/favicon.png" />
 
-      <Header />
+          <Header />
 
-      <main>{children}</main>
+          <main>{children}</main>
 
-      <Footer />
+          <Footer />
+        </body>
+      </html>
     </>
   );
 }
